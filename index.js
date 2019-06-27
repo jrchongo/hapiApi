@@ -1,6 +1,6 @@
 'use strict';
 import Hapi from '@hapi/hapi';
-import {getRoutes} from './routes/get-routes';
+import {getRoutes} from './src/routes/get-routes';
 
 const init = async () => {
     const server = Hapi.server({
