@@ -13,9 +13,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jrchongo/hapiApi/issues"
-  },
   "homepage": "https://github.com/jrchongo/hapiApi#readme",
   "dependencies": {
     "@babel/core": "^7.4.5",
@@ -24,5 +21,13 @@
     "@hapi/hapi": "^18.3.1",
     "babel-polyfill": "^6.26.0",
     "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chance": "^1.0.18",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2"
   }
 }
