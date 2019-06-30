@@ -10,18 +10,16 @@ function getRoutesFromControllers(controllers) {
     return routes;
 }
 
-function requireAllControllers() {
+function requireAllControllers(path) {
     /* Example requireDir output:
-       {
-         controller1: require('./controllers/controller1.js'),
-         controller2: require('./controllers/controller2.js')
-       }
-    */
-
-    return requireDir('../controllers');
+     {
+        controller1: require('./controllers/controller1.js'),
+        controller2: require('./controllers/controller2.js')
+     }*/
+    return requireDir(path);
 }
 
-export function getRoutes() {
-    const controllers = requireAllControllers();
+export function getRoutes(path) {
+    const controllers = requireAllControllers(path);
     return getRoutesFromControllers(controllers);
 }
