@@ -1,7 +1,7 @@
 export const helloa = {
     method: 'GET',
     path: '/helloa',
-    handler: (request, h) => {
+    handler: () => {
         return 'Hello World! A!';
     }
 };
@@ -9,7 +9,7 @@ export const helloa = {
 export const hellob = {
     method: 'GET',
     path: '/hellob',
-    handler: (request, h) => {
+    handler: () => {
 
         return 'Hello World! B!';
     }

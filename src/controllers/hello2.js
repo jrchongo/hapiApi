@@ -1,7 +1,7 @@
 export const helloc = {
     method: 'GET',
     path: '/helloc',
-    handler: (request, h) => {
+    handler: () => {
 
         return 'Hello World! C!';
     }

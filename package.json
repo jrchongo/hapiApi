@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ./src ./test",
+    "lint": "eslint ./src ./test --fix test",
     "start": "node start.js",
-    "verify": "npm run lint"
+    "test": "mocha test/unit",
+    "verify": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
