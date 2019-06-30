@@ -11,11 +11,11 @@ function getRoutesFromControllers(controllers) {
 }
 
 function requireAllControllers(path) {
-    /* Example requireDir output:
-     {
-        controller1: require('./controllers/controller1.js'),
-        controller2: require('./controllers/controller2.js')
-     }*/
+/* Example requireDir output:
+ {
+    controller1: require('./controllers/controller1.js'),
+    controller2: require('./controllers/controller2.js')
+ }*/
     return requireDir(path);
 }
 

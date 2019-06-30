@@ -1,7 +1,7 @@
 import {expect} from 'chai';
-import {getRoutes} from "../../src/routes/get-routes";
-import {dummyEndPoint1, dummyEndpoint2} from "./controllers/controller1";
-import {dummyEndpoint3} from "./controllers/controller2";
+import {getRoutes} from '../../src/routes/get-routes';
+import {dummyEndPoint1, dummyEndpoint2} from './controllers/controller1';
+import {dummyEndpoint3} from './controllers/controller2';
 
 describe('Get Routes', () => {
     let actual,
