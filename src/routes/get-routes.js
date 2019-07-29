@@ -1,4 +1,5 @@
-import requireDir from 'require-dir';
+import {readdirSync} from 'fs';
+import {join} from 'path';
 
 function getRoutesFromControllers(controllers) {
     const routes = [];
@@ -7,19 +8,23 @@ function getRoutesFromControllers(controllers) {
             routes.push(controllers[controller][route]);
         });
     });
+
     return routes;
 }
 
-function requireAllControllers(path) {
-/* Example requireDir output:
- {
-    controller1: require('./controllers/controller1.js'),
-    controller2: require('./controllers/controller2.js')
- }*/
-    return requireDir(path);
+function requireAllControllers(relativePath) {
+    const controllerPath = join(__dirname, relativePath);
+    const fileNames = readdirSync(controllerPath);
+    const controllers = fileNames.map((file) => {
+        return require(`${controllerPath}/${file}`);
+    });
+
+    return controllers;
 }
 
 export function getRoutes(path) {
     const controllers = requireAllControllers(path);
-    return getRoutesFromControllers(controllers);
+    const routes = getRoutesFromControllers(controllers);
+
+    return routes;
 }

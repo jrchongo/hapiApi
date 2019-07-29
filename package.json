@@ -1,7 +1,7 @@
 {
   "name": "hapiapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "A hello world endpoint",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./src ./test --fix test",
@@ -19,8 +19,7 @@
     "@babel/core": "^7.4.5",
     "@babel/register": "^7.4.4",
     "@hapi/hapi": "^18.3.1",
-    "babel-polyfill": "^6.26.0",
-    "require-dir": "^1.2.0"
+    "babel-polyfill": "^6.26.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
