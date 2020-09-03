@@ -18,7 +18,7 @@
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/register": "^7.4.4",
-    "@hapi/hapi": "^18.3.1",
+    "@hapi/hapi": "^19.1.1",
     "babel-polyfill": "^6.26.0"
   },
   "devDependencies": {
